@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: snow;
+    
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 8fr 2fr;
+
+}
+
+.nav-title{
+    font-size: 2em;
+}
+
+.nav-bar{
+    /* background-color: gray; */
+}
+
+.align-border{
+    margin-left: 1.5em;
+    line-height: 1.5em;
+    padding: 0.5em;
+    margin-top: 1.25em;
+    margin-right: 1.5em;
+    background-color: rgb(218, 218, 218);
+}
+
+.entry-box{
+    border-radius: 1em;
+    border-color: rgb(255, 196, 86);
+    border-width: 0.25em;
+    border-style: solid;
+}
+
+.comments-title{
+    line-height: 1.25em;
+    background-color:snow;
+    border: 0.25em rgb(255, 196, 86) solid;
+
+}
+
+.input-bar{
+    height: 10em;
+    width: 90%;
+    
+}
+
+.main-thread{
+    /* background-color: gray; */
+    
+}
+
+.comments{
+    /* background-color: gray; */
+}
+

@@ -22,16 +22,60 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <p>Testing firebase Hosting</p>
-    <input
-      type="text"
-      id="text-post"
-      placeholder="Type what you want to post here"
-    />
-    <button id="js-fb-data">Post</button>
-    <div class="posts"></div>
+
+    <section class ="nav-bar align-border">
+      <h1 class="nav-title">Blog</h1>
+      <div>Return to Main Menu</div>
+    </section>
+
+    <div class = "container">
+        <div class = "left-col">
+            <section class="main-thread align-border entry-box">
+                <h3>Main Thread</h3>
+                <p>Hello, this thread is about posting your ideas</p>
+            </section>
+
+            <section class = "align-border user-input">
+              <h3>Share your comments here!</h3>
+
+              <!-- <textarea
+                class="input-bar"
+                type="text"
+                id="text-post"> Type what you want to post here
+              </textarea> -->
+
+              <input class="input-bar"
+              type="text"
+              id="text-post"/>
+
+              <button id="js-fb-data">Post</button>
+              <div class="posts"></div>
+            </section>
+        
+            <section class = "comments-title align-border">
+                <h3>Comments:</h3>
+            </section>
+        
+            <section class="comments align-border entry-box">
+                <div class="user-input"> 
+                    <p>I think surveillance sucks</p>
+                </div>
+            </section>
+        </div>
+    
+        <div class = "right-col">
+    
+        </div>
+        
+    </div>
+
+
+    
+
     <script src="app.js"></script>
   </body>
 </html>
