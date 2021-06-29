@@ -43,10 +43,9 @@ body{
 
 }
 
-/* .input-bar{
+.input-bar{
     height: 10em;
-    width: 90%; */
-    
+    width: 90%;
 }
 
 .main-thread{

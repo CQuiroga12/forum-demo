@@ -30,7 +30,7 @@ uploadButton.addEventListener("click", () => {
 uploadButton.addEventListener("click", addPosts);
 
 let renderIndex = 0;
-let postArea = document.querySelector(".posts");
+let postArea = document.querySelector(".comments");
 function addPosts() {
   let targetData = firebase.database().ref("posts").orderByKey();
   targetData.once("value").then((snapshot) => {
@@ -44,9 +44,12 @@ function renderPosts() {
     .database()
     .ref("posts/" + renderIndex)
     .on("value", (snapshot) => {
-      let newPost = document.createElement("p");
-      newPost.textContent = snapshot.val().Post;
+      let newPost = document.createElement("div");
+      newPost.setAttribute("class", "user-input");
+      let newComment = document.createElement("p");
+      newComment.textContent = snapshot.val().Post;
       postArea.appendChild(newPost);
+      newPost.appendChild(newComment);
     });
   renderIndex++;
 }
