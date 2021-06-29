@@ -2,6 +2,7 @@ let textPost = document.getElementById("text-post");
 let uploadButton = document.getElementById("js-fb-data");
 let postIndex = 0;
 
+
 function getPostIndex() {
   firebase
     .database()
@@ -11,6 +12,7 @@ function getPostIndex() {
       console.log(snapshot.val());
     });
 }
+
 
 uploadButton.addEventListener("click", () => {
   firebase
@@ -36,6 +38,7 @@ function addPosts() {
   });
 }
 
+
 function renderPosts() {
   firebase
     .database()
@@ -47,6 +50,7 @@ function renderPosts() {
     });
   renderIndex++;
 }
+
 
 document.addEventListener("DOMContentLoaded", addPosts);
 document.addEventListener("DOMContentLoaded", getPostIndex);
