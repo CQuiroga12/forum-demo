@@ -17,7 +17,7 @@ body{
 }
 
 .nav-bar{
-    /* background-color: gray; */
+    background-color: blue;
 }
 
 .align-border{
@@ -26,12 +26,12 @@ body{
     padding: 0.5em;
     margin-top: 1.25em;
     margin-right: 1.5em;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(241, 241, 241);
 }
 
 .entry-box{
     border-radius: 1em;
-    border-color: rgb(255, 196, 86);
+    border-color: blue;
     border-width: 0.25em;
     border-style: solid;
 }
@@ -39,7 +39,7 @@ body{
 .comments-title{
     line-height: 1.25em;
     background-color:snow;
-    border: 0.25em rgb(255, 196, 86) solid;
+    border: 0.25em blue solid;
 
 }
 
