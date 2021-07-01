@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Firebase Hosting</title>
+    <title>Welcome to Surveillance Blog</title>
+
+
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.6.8/firebase-app.js"></script>
@@ -22,17 +24,37 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu-bar/fonts/icomoon/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="menu-bar/css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="menu-bar/css/style.css">
+    <link rel="stylesheet" href="style.css"/>
+
 
   </head>
   <body>
 
-    <section class ="align-border nav-bar">
-      <h1 class="nav-title">Blog</h1>
-      <div>Return to Main Menu</div>
+    <section class ="nav-bar align-border">
+      <img src="icon.png">
+      <h1 class="nav-title">SurveillanceAroundYou</h1>
+      <div class="nav-menus">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="dropbtn">Blog</div>
+        <div class="dropdown">
+          <button class="dropbtn"> Education </button>
+          <div class="dropdown-content">
+            <a href="info.html"> Campus Surveillance </a>
+            <a href="covid.html"> School Surveillance during COVID-19</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class = "container">
+
+    <div class = "mycontainer">
         <div class = "left-col">
             <section class="main-thread align-border entry-box">
                 <h3>Main Thread</h3>
@@ -49,8 +71,6 @@
               </textarea> 
               <button id="js-fb-data">Post</button>
               </div>
-               
-
             </section>
         
             <section class = "comments-title align-border">
@@ -68,7 +88,9 @@
         </div>
     
         <div class = "right-col">
-          <!-- <section style="background-color: gray;"> -->
+          <section class="align-border">
+            <iframe src="https://www.bbc.com/" height="400" width="100%" title="Iframe Example"></iframe>
+
 
           </section>
         </div>

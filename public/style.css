@@ -3,7 +3,12 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     background-color: snow;
+    min-width: 1500px;
     
+}
+
+p{
+    color: black;
 }
 
 #js-fb-data{
@@ -12,15 +17,62 @@ body{
     width: 8em;
 }
 
+.nav-menus{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr 2fr 3fr;
+    column-gap: 2em;
+    margin-right: 2em;
+}
+
 .input-section{
     display: grid;
     grid-template-columns: 10fr 2fr;
 }
-.container{
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    min-width: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropbtn:hover {background-color:#1571bd;}
+  
+  .dropbtn2:hover {background-color:#1571bd;}
+
+
+.mycontainer{
     display:grid;
     grid-template-columns: 5fr 2fr;
 
 }
+
+.dropbtn {
+    border: none;
+    color: white;
+    background-color:#2196F3;
+    padding: 16px;
+    font-size: 16px;
+    font-size: "Montserrat", sans-serif;
+    border-radius: 30px;
+  }
 
 .nav-title{
     font-size: 2em;
@@ -28,6 +80,9 @@ body{
 
 .nav-bar{
     background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+
 }
 
 .align-border{
