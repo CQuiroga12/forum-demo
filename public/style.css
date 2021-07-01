@@ -1,80 +1,202 @@
-body{
-    margin: 0px;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: snow;
-    
+body {
+  margin: 0px;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(175, 175, 175);
+  min-width: 1500px;
 }
 
-#js-fb-data{
-    margin-top: 2.5em;
-    height: 4em;
-    width: 8em;
+p {
+  color: black;
 }
 
-.input-section{
-    display: grid;
-    grid-template-columns: 10fr 2fr;
-}
-.container{
-    display:grid;
-    grid-template-columns: 5fr 2fr;
-
+.examples-from-google {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  column-gap: 1em;
 }
 
-.nav-title{
-    font-size: 2em;
+#js-fb-data {
+  margin-top: 2.5em;
+  height: 4em;
+  width: 8em;
 }
 
-.nav-bar{
-    background-color: blue;
+.right-col {
+  margin-top: 2em;
 }
 
-.align-border{
-    margin-left: 1.5em;
-    line-height: 1.5em;
-    padding: 0.5em;
-    margin-top: 1.25em;
-    margin-right: 1.5em;
-    background-color: rgb(241, 241, 241);
+.nav-menus {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-columns: 8fr 2fr 2fr 2fr 3fr;
+  column-gap: 2em;
+  margin-right: 2em;
 }
 
-.user-input{
-    border-radius: 1em;
-    border-color: rgb(130, 130, 255);
-    border-width: 0.25em;
-    border-style: solid;
-    margin-top: 1em;
-    margin-left: 1.5em;
-    line-height: 1.5em;
-    padding: 0.5em;
-    margin-top: 1.25em;
-    margin-right: 1.5em;
-    background-color: rgb(241, 241, 241);
+.input-section {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
 }
 
-.comments-title{
-    line-height: 1.25em;
-    background-color:snow;
-    /* border: 0.25em blue solid; */
-    /* border-radius: 1em; */
-
-
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  min-width: 2em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.input-bar{
-    height: 10em;
-    width: 90%;
+.dropdown-content a {
+  color: black;
+  padding: 1em 1em;
+  text-decoration: none;
+  display: block;
 }
 
-.main-thread{
-    /* background-color: gray; */
-    
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.comments{
-    border: 0.25em blue solid;
-    border-radius: 1em;
-
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
+.dropbtn:hover {
+  background-color: #1571bd;
+}
+
+.dropbtn2:hover {
+  background-color: #1571bd;
+}
+
+.mycontainer {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+#js-fb-data {
+  height: 4em;
+  width: 8em;
+}
+
+/* .container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+} */
+
+.nav-title {
+  font-size: 2em;
+}
+
+.dropbtn {
+  border: none;
+  color: white;
+  background-color: #2196f3;
+  padding: 16px;
+  font-size: 16px;
+  font-size: "Montserrat", sans-serif;
+  border-radius: 30px;
+}
+
+.nav-title {
+  font-size: 2em;
+}
+
+.nav-background {
+  background-color: rgb(130, 130, 255) !important;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: rgb(130, 130, 255) !important;
+}
+.align-border {
+  margin-left: 1.5em;
+  line-height: 1.5em;
+  padding: 0.5em;
+  /* margin-top: 1.25em; */
+  margin-right: 1.5em;
+  background-color: rgb(241, 241, 241);
+}
+
+.nav-bar {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.user-input {
+  /* border-radius: 1em; */
+  border-color: rgb(130, 130, 255);
+  border-width: 0.25em;
+  border-top: 0;
+  border-style: solid;
+  /* margin-top: 1em; */
+  margin-left: 1.5em;
+  line-height: 1.5em;
+  padding: 0.5em;
+  margin-right: 1.5em;
+  background-color: rgb(241, 241, 241);
+}
+
+.comments-title {
+  line-height: 1.25em;
+  background-color: rgb(241, 241, 241);
+  border-color: rgb(130, 130, 255);
+  border-width: 0.25em;
+  border-top: 0;
+  border-style: solid;
+}
+
+.input-bar {
+  height: 10em;
+  width: 90%;
+}
+
+.main-thread {
+  margin-top: 1em;
+  border: 0.25em rgb(130, 130, 255) solid;
+  border-radius: 1em 1em 0 0;
+}
+
+.comments {
+  border: 0;
+  padding: 0;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.posts {
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.25em rgb(130, 130, 255) solid;
+  border-top: 0;
+  border-right: 0;
+  padding: 1em;
+  background-color: white;
+}
+
+.footer {
+  background-color: rgb(130, 130, 255);
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  border: 0;
+  text-align: center;
+}
+.footer h3 {
+  margin-top: 0.25em;
+}
+
+.footer ul {
+  list-style-type: circle;
+  text-align: initial;
+}

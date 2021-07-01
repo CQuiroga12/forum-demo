@@ -2,7 +2,7 @@ let textPost = document.getElementById("text-post");
 let uploadButton = document.getElementById("js-fb-data");
 let postIndex = 0;
 
-
+//Sets postIndex so that data is not overwritten
 function getPostIndex() {
   firebase
     .database()
@@ -13,13 +13,14 @@ function getPostIndex() {
     });
 }
 
-
+//Adds event listener to upload button
+//Sets the text for the post along with its index under the post index position
 uploadButton.addEventListener("click", () => {
   firebase
     .database()
     .ref("posts/" + postIndex)
     .set({
-      Post: textPost.value,
+      Text: textPost.value,
       Index: postIndex,
     });
   postIndex++;
@@ -31,6 +32,8 @@ uploadButton.addEventListener("click", addPosts);
 
 let renderIndex = 0;
 let postArea = document.querySelector(".comments");
+
+//Calls render post for each key in the database
 function addPosts() {
   let targetData = firebase.database().ref("posts").orderByKey();
   targetData.once("value").then((snapshot) => {
@@ -38,22 +41,19 @@ function addPosts() {
   });
 }
 
-
+//
 function renderPosts() {
   firebase
     .database()
     .ref("posts/" + renderIndex)
     .on("value", (snapshot) => {
       let newPost = document.createElement("div");
-      newPost.setAttribute("class", "user-input");
-      let newComment = document.createElement("p");
-      newComment.textContent = snapshot.val().Post;
+      newPost.setAttribute("class", "posts");
+      newPost.textContent = snapshot.val().Text;
       postArea.appendChild(newPost);
-      newPost.appendChild(newComment);
     });
   renderIndex++;
 }
-
 
 document.addEventListener("DOMContentLoaded", addPosts);
 document.addEventListener("DOMContentLoaded", getPostIndex);

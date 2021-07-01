@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Firebase Hosting</title>
+    <title>Surveillance Report Forum</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.6.8/firebase-app.js"></script>
@@ -22,62 +22,87 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu-bar/fonts/icomoon/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="menu-bar/css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="menu-bar/css/style.css">
+    <link rel="stylesheet" href="style.css"/>
 
   </head>
   <body>
 
-    <section class ="align-border nav-bar">
-      <h1 class="nav-title">Blog</h1>
-      <div>Return to Main Menu</div>
+    <section class ="nav-bar align-border">
+      <img src="icon.png">
+      <h1 class="nav-title"> <a href= "main.html">SurveillanceAroundYou</a></h1>
+      <div class="nav-menus">
+        <div></div>
+        <div></div>
+        <div></div>
+        <a href="index.html"><div class="dropbtn">Blog</div></a>
+        <div class="dropdown">
+          <button class="dropbtn"> Education </button>
+          <div class="dropdown-content">
+            <a href="info.html"> Campus Surveillance </a>
+            <a href="covid.html"> School Surveillance during COVID-19</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class = "container">
+
+    
+
+    <div class = "mycontainer">
+
         <div class = "left-col">
             <section class="main-thread align-border entry-box">
                 <h3>Main Thread</h3>
-                <p>Hello, this thread is about posting your ideas</p>
+                <p>Report any instances or encoutners of surveillance</p>
             </section>
 
             <section class = "align-border user-input">
-              <h3>Share your comments here!</h3>
+              <h3>Type of surveillance: <input type="text"></h3>
               <div class = "input-section">
                 <textarea
                 class="input-bar"
                 type="text"
-                id="text-post"> Type what you want to post here
+                id="text-post">Additional info (Ex: time, location, frequency, comments, etc.)
               </textarea> 
               <button id="js-fb-data">Post</button>
               </div>
-               
-
             </section>
         
             <section class = "comments-title align-border">
-                <h3>Comments</h3>
+                <h3>Posts</h3>
             </section>
         
-            <section class="comments align-border">
-                <div class="user-input"> 
-                    <p>I think surveillance sucks</p>
-                </div>
-                <div class="user-input"> 
-                    <p>I think surveillance sucks too</p>
-                </div>
-            </section>
+            <section class="comments align-border"></section>
         </div>
+      
     
-        <div class = "right-col">
-          <!-- <section style="background-color: gray;"> -->
-
-          </section>
-        </div>
-        
+      <div class = "right-col">
+        <section class="align-border">
+          <iframe src="https://www.bbc.com/" height="400" width="100%" title="Iframe Example"></iframe>
+        </section>
+      </div>
     </div>
 
+    <footer class="footer">
+      <div>
+        <h3>Other Pages:</h3>
+        <ul>
+          <li>
+          <a>Home page</a>
+          </li>
+        </ul>
+      </div>
+      <div class="back-to-top"><a>Back to top</a></div>
+    </footer>
 
-    
 
+    <!-- <script defer src="data-handling.js"></script>
+    <script defer src="post-renderer.js"></script> -->
     <script src="app.js"></script>
   </body>
 </html>
