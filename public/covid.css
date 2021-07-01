@@ -3,12 +3,13 @@
   padding: 128px 16px;
 }
 
-.dropbtn {
+
+.dropbtn, .dropbtn2, .home {
   border: none;
   color: white;
   background-color:#2196F3;
   padding: 16px;
-  font-size: 16px;
+  font-size: 20px;
   font-size: "Montserrat", sans-serif;
   border-radius: 30px;
 }
@@ -17,14 +18,8 @@
   float:right;
 }
 
-.dropbtn2 {
-  border: none;
-  color: white;
-  background-color:#2196F3;
-  padding: 16px;
-  font-size: 16px;
-  font-size: "Montserrat", sans-serif;
-  border-radius: 30px;
+.home{
+  float:left;
 }
 
 
@@ -51,7 +46,9 @@
 
 .dropbtn:hover {background-color:#1571bd;}
 
-.dropbtn2:hover {background-color:#1571bd;}
+.dropbtn2:hover {background-color:#1571bd; cursor:pointer;}
+
+.home:hover {background-color:#1571bd; cursor:pointer;}
 
 h1{
   text-align: center;
