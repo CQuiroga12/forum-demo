@@ -1,0 +1,128 @@
+.header{
+  background-color: #2196F3;
+  padding: 128px 16px;
+}
+
+.dropbtn {
+  border: none;
+  color: white;
+  background-color:#2196F3;
+  padding: 16px;
+  font-size: 16px;
+  font-size: "Montserrat", sans-serif;
+  border-radius: 30px;
+}
+
+.drop-pos{
+  float:right;
+}
+
+.dropbtn2 {
+  border: none;
+  color: white;
+  background-color:#2196F3;
+  padding: 16px;
+  font-size: 16px;
+  font-size: "Montserrat", sans-serif;
+  border-radius: 30px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 24px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropbtn:hover {background-color:#1571bd;}
+
+.dropbtn2:hover {background-color:#1571bd;}
+
+h1{
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  margin: 16px;
+}
+
+h2{
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 10px;
+  text-align:center;
+}
+
+h3{
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+p{
+  margin: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  line-height: 2.0;
+}
+
+.c1-format{
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+  display: grid;
+}
+
+.c2-backgroundcolor{
+  background-color: #f1f1f1;
+}
+.c2-format{
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+  display: grid;
+}
+
+.c1{
+  padding: 64px 16px 12px;
+  font-family: "Lato", sans-serif;
+}
+
+.c2{
+  padding: 64px 16px 12px;
+  font-family: "Lato", sans-serif;
+
+}
+
+.c1-articles{
+  margin: 0 auto 0 auto;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 12px;
+
+}
+
+.c2-articles{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
