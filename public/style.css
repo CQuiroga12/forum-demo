@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 body{
     margin: 0px;
     font-size: 20px;
     font-family: sans-serif;
-    background-color: snow;
+    background-color: rgb(175, 175, 175);
     min-width: 1500px;
-    
 }
 
 p{
@@ -62,34 +60,24 @@ p{
 .mycontainer{
     display:grid;
     grid-template-columns: 5fr 2fr;
-=======
-body {
-  margin: 0px;
-  font-size: 20px;
-  font-family: sans-serif;
-  background-color: rgb(175, 175, 175);
 }
+
+
 
 #js-fb-data {
   height: 4em;
   width: 8em;
 }
 
-.input-section {
-  display: grid;
-  grid-template-columns: 10fr 2fr;
-}
 /* .container {
   display: grid;
   grid-template-columns: 5fr 2fr;
 } */
->>>>>>> 7558dd807950aad2221dc5864d078bec1cfccc72
 
 .nav-title {
   font-size: 2em;
 }
 
-<<<<<<< HEAD
 .dropbtn {
     border: none;
     color: white;
@@ -108,8 +96,7 @@ body {
     background-color: blue;
     display: grid;
     grid-template-columns: 1fr 1fr 8fr;
-
-=======
+}
 .nav-background {
   background-color: rgb(130, 130, 255) !important;
   margin: 0;
@@ -117,7 +104,6 @@ body {
 
 .nav-bar {
   background-color: rgb(130, 130, 255) !important;
->>>>>>> 7558dd807950aad2221dc5864d078bec1cfccc72
 }
 .align-border {
   margin-left: 1.5em;
