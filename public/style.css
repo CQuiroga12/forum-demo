@@ -79,12 +79,12 @@ a {
 }
 
 .dropbtn:hover {
-  background-color: #1571bd;
+  background-color: #2196f3;
   cursor: default;
 }
 
 .dropbtn2:hover {
-  background-color: #1571bd;
+  background-color: #2196f3;
   cursor: pointer;
 }
 
@@ -123,12 +123,12 @@ a > .nav-title {
 }
 
 .nav-background {
-  background-color: #1571bd !important;
+  background-color: #2196f3 !important;
   margin: 0;
 }
 
 .nav-bar {
-  background-color: #1571bd !important;
+  background-color: #2196f3 !important;
 }
 .align-border {
   margin-left: 1.5em;
@@ -140,7 +140,7 @@ a > .nav-title {
 }
 
 .nav-bar {
-  background-color: #1571bd;
+  background-color: #2196f3;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr;
   margin-left: 0;
@@ -149,7 +149,7 @@ a > .nav-title {
 
 .user-input {
   /* border-radius: 1em; */
-  border-color: #1571bd;
+  border-color: #2196f3;
   border-width: 0.25em;
   border-top: 0;
   border-style: solid;
@@ -164,7 +164,7 @@ a > .nav-title {
 .comments-title {
   line-height: 1.25em;
   background-color: rgb(241, 241, 241);
-  border-color: #1571bd;
+  border-color: #2196f3;
   border-width: 0.25em;
   border-top: 0;
   border-style: solid;
@@ -177,7 +177,7 @@ a > .nav-title {
 
 .main-thread {
   margin-top: 1em;
-  border: 0.25em #1571bd solid;
+  border: 0.25em #2196f3 solid;
   border-radius: 1em 1em 0 0;
 }
 
@@ -192,7 +192,7 @@ a > .nav-title {
 .posts {
   margin-top: 1em;
   margin-right: 1em;
-  border: 0.25em #1571bd solid;
+  border: 0.25em #2196f3 solid;
   border-top: 0;
   border-right: 0;
   padding: 1em;
@@ -207,7 +207,7 @@ a > .nav-title {
   margin-right: 2em;
 }
 .footer {
-  background-color: #1571bd;
+  background-color: #2196f3;
   padding-top: 0.25em;
   margin-top: 1em;
   border: 0;
