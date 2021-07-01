@@ -1,17 +1,25 @@
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0px;
   font-size: 20px;
   font-family: sans-serif;
   background-color: #f1f1f1;
   min-width: 1500px;
+  min-height: 100%;
 }
-
+.center-col {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 p {
   color: black;
 }
 
-a{
-    color: brown;
+a {
+  color: brown;
 }
 
 .examples-from-google {
@@ -64,7 +72,6 @@ a{
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  
 }
 
 .dropdown:hover .dropdown-content {
@@ -100,12 +107,12 @@ a{
   font-size: 2em;
 }
 
-a > .nav-title{
-    color: white !important;
-
+a > .nav-title {
+  color: white !important;
 }
 
-.dropbtn, .dropbtn2 {
+.dropbtn,
+.dropbtn2 {
   border: none;
   color: white;
   background-color: #2196f3;
@@ -195,10 +202,11 @@ a > .nav-title{
 .footer {
   background-color: rgb(130, 130, 255);
   padding-top: 0.25em;
-  padding-bottom: 0.5em;
   margin-top: 1em;
   border: 0;
   text-align: center;
+  overflow: hidden;
+  bottom: 0px;
 }
 .footer h3 {
   margin-top: 0.25em;
@@ -208,3 +216,4 @@ a > .nav-title{
   list-style-type: circle;
   text-align: initial;
 }
+
