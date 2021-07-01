@@ -16,6 +16,10 @@ p{
     width: 8em;
 }
 
+.right-col{
+    margin-top: 2em;
+}
+
 .nav-menus{
     text-align: center;
     margin-top: auto;
