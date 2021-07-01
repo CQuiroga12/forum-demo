@@ -1,5 +1,5 @@
 html {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -10,11 +10,13 @@ body {
   min-width: 1500px;
   min-height: 100%;
   background-color: lightgray;
+  height: 100vh;
 }
 .center-col {
   margin-left: 15%;
   margin-right: 15%;
   background-color: lightgray;
+  margin-bottom: -50px;
 }
 p {
   color: black;
@@ -191,6 +193,7 @@ a > .nav-title {
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: lightgray;
+  margin-bottom: 1em;
 }
 
 .posts {
@@ -212,14 +215,23 @@ a > .nav-title {
   margin-right: 2em;
   margin-bottom: 0;
 }
+
+.whole-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.push {
+  height: 50px;
+}
 .footer {
   background-color: #2196f3;
   padding-top: 0.25em;
   margin-top: 1em;
   border: 0;
   text-align: center;
-  overflow: hidden;
-  bottom: 0px;
+  height: 50px;
 }
 
 .footer a {
