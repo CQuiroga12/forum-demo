@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Surveillance Report Forum</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.6.8/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.6.8/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-performance.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="menu-bar/fonts/icomoon/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="menu-bar/css/bootstrap.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="menu-bar/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="top" class="nav-bar align-border">
+      <img src="icon.png" />
+      <h1 class="nav-title"><a href="index.html">SurveillanceAroundYou</a></h1>
+      <div class="nav-menus">
+        <div></div>
+        <div></div>
+        <div></div>
+        <a href="blog.html"><div class="dropbtn2">Forum</div></a>
+        <div class="dropdown">
+          <button class="dropbtn">Education</button>
+          <div class="dropdown-content">
+            <a href="info.html"> Campus Surveillance </a>
+            <a href="covid.html"> School Surveillance during COVID-19</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="center-col">
+      <section class="main-thread align-border entry-box">
+        <h3>Main Thread</h3>
+        <p>
+          Report any instances or encoutners of surveillance you have
+          experienced on campus
+        </p>
+      </section>
+
+      <section class="align-border user-input">
+        <h3>
+          Type of surveillance:
+          <input type="text" id="type-input-js" placeholder="optional" />
+        </h3>
+        <h4>
+          School:
+          <input type="text" id="school-input-js" placeholder="optional" />
+        </h4>
+        <div class="input-section">
+          <textarea
+            class="input-bar"
+            type="text"
+            id="text-post"
+            placeholder=" Additional info (Ex: time, location, frequency, comments, etc.)"
+          ></textarea>
+          <button id="js-fb-data">Post</button>
+        </div>
+      </section>
+
+      <section class="comments-title align-border">
+        <h3>Posts:</h3>
+      </section>
+
+      <section class="comments align-border"></section>
+    </div>
+    <div class="footer">
+      <div class="back-to-top"><a href="#top">Back to top</a></div>
+    </div>
+    <!-- <script defer src="data-handling.js"></script>
+    <script defer src="post-renderer.js"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
