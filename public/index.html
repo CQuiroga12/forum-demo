@@ -22,26 +22,24 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <link rel="stylesheet" href="menu-bar/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="menu-bar/fonts/icomoon/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="menu-bar/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu-bar/css/bootstrap.min.css" />
     <!-- Style -->
-    <link rel="stylesheet" href="menu-bar/css/style.css">
-    <link rel="stylesheet" href="style.css"/>
-
+    <link rel="stylesheet" href="menu-bar/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <section class ="nav-bar align-border">
-      <img src="icon.png">
-      <h1 class="nav-title"> <a  href= "main.html" >SurveillanceAroundYou</a></h1>
+    <section class="nav-bar align-border">
+      <img src="icon.png" />
+      <h1 class="nav-title"><a href="main.html">SurveillanceAroundYou</a></h1>
       <div class="nav-menus">
         <div></div>
         <div></div>
         <div></div>
-        <a href="index.html"><div class="dropbtn2">Blog</div></a>
+        <a href="index.html"><div class="dropbtn2">Forum</div></a>
         <div class="dropdown">
-          <button class="dropbtn"> Education </button>
+          <button class="dropbtn">Education</button>
           <div class="dropdown-content">
             <a href="info.html"> Campus Surveillance </a>
             <a href="covid.html"> School Surveillance during COVID-19</a>
@@ -49,58 +47,33 @@
         </div>
       </div>
     </section>
+    <div class="center-col">
+      <section class="main-thread align-border entry-box">
+        <h3>Main Thread</h3>
+        <p>Report any instances or encoutners of surveillance</p>
+      </section>
 
-
-    
-
-    <div class = "mycontainer">
-
-        <div class = "left-col">
-            <section class="main-thread align-border entry-box">
-                <h3>Main Thread</h3>
-                <p>Report any instances or encoutners of surveillance</p>
-            </section>
-
-            <section class = "align-border user-input">
-              <h3>Type of surveillance: <input type="text"></h3>
-              <div class = "input-section">
-                <textarea
-                class="input-bar"
-                type="text"
-                id="text-post">Additional info (Ex: time, location, frequency, comments, etc.)
-              </textarea> 
-              <button id="js-fb-data">Post</button>
-              </div>
-            </section>
-        
-            <section class = "comments-title align-border">
-                <h3>Posts</h3>
-            </section>
-        
-            <section class="comments align-border"></section>
+      <section class="align-border user-input">
+        <h3>Type of surveillance: <input type="text" /></h3>
+        <h4>School: <input type="text" /></h4>
+        <div class="input-section">
+          <textarea class="input-bar" type="text" id="text-post">
+Additional info (Ex: time, location, frequency, comments, etc.)
+              </textarea
+          >
+          <button id="js-fb-data">Post</button>
         </div>
-      
-    
-      <div class = "right-col">
-        <section class="align-border">
-          <iframe src="https://www.bbc.com/" height="400" width="100%" title="Iframe Example"></iframe>
-        </section>
-      </div>
+      </section>
+
+      <section class="comments-title align-border">
+        <h3>Posts</h3>
+      </section>
+
+      <section class="comments align-border"></section>
     </div>
-
-    <footer class="footer">
-      <div>
-        <h3>Other Pages:</h3>
-        <ul>
-          <li>
-          <a>Home page</a>
-          </li>
-        </ul>
-      </div>
+    <div class="footer">
       <div class="back-to-top"><a>Back to top</a></div>
-    </footer>
-
-
+    </div>
     <!-- <script defer src="data-handling.js"></script>
     <script defer src="post-renderer.js"></script> -->
     <script src="app.js"></script>
