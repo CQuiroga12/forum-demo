@@ -140,7 +140,7 @@ a > .nav-title {
 }
 
 .nav-bar {
-  background-color: blue;
+  background-color: #1571bd;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr;
   margin-left: 0;
@@ -149,7 +149,7 @@ a > .nav-title {
 
 .user-input {
   /* border-radius: 1em; */
-  border-color: rgb(130, 130, 255);
+  border-color: #1571bd;
   border-width: 0.25em;
   border-top: 0;
   border-style: solid;
@@ -164,7 +164,7 @@ a > .nav-title {
 .comments-title {
   line-height: 1.25em;
   background-color: rgb(241, 241, 241);
-  border-color: rgb(130, 130, 255);
+  border-color: #1571bd;
   border-width: 0.25em;
   border-top: 0;
   border-style: solid;
@@ -177,7 +177,7 @@ a > .nav-title {
 
 .main-thread {
   margin-top: 1em;
-  border: 0.25em rgb(130, 130, 255) solid;
+  border: 0.25em #1571bd solid;
   border-radius: 1em 1em 0 0;
 }
 
@@ -192,15 +192,22 @@ a > .nav-title {
 .posts {
   margin-top: 1em;
   margin-right: 1em;
-  border: 0.25em rgb(130, 130, 255) solid;
+  border: 0.25em #1571bd solid;
   border-top: 0;
   border-right: 0;
   padding: 1em;
   background-color: white;
+  font-size: 30px;
 }
 
+.posts > p {
+  font-size: 15px;
+  font-weight: 300;
+  display: inline-block;
+  margin-right: 2em;
+}
 .footer {
-  background-color: rgb(130, 130, 255);
+  background-color: #1571bd;
   padding-top: 0.25em;
   margin-top: 1em;
   border: 0;
@@ -208,12 +215,7 @@ a > .nav-title {
   overflow: hidden;
   bottom: 0px;
 }
-.footer h3 {
-  margin-top: 0.25em;
-}
 
-.footer ul {
-  list-style-type: circle;
-  text-align: initial;
+.footer a {
+  color: white;
 }
-
